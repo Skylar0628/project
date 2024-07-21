@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.calendar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.non-current {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.non-current:hover {
+    cursor: not-allowed;
+}
+
+.current {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.current:hover {
+    background-color: #f0f0f0;
+}
+
+.highlighted-gray {
+    background-color: #e0e0e0;
+}
+
+.highlighted-blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.highlighted-yellow {
+    background-color: #ffff99;
+}
